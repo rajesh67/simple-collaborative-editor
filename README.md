@@ -2,7 +2,7 @@
 ## How to run this project
 
 Clone the repo on your machine:
- - git clone https://github.com/rajesh67/simple-collaborative-editor.git
+ - `git clone https://github.com/rajesh67/simple-collaborative-editor.git`
  - go to the "simple-collaborative-editor" directory 
  - go to terminal and run `npm install`
 
