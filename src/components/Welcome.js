@@ -26,6 +26,8 @@ export default class Welcome extends Component {
         channel : channel
     })
 
+    // this.setState({socketId:socket.id})
+
     const ref=this;
 
     socket.on("userData", function(data) {
@@ -59,6 +61,7 @@ export default class Welcome extends Component {
         username : this.state.username,
         socketId : socket.id
       });
+      
       console.log(socket.id);
       console.log(this.state.username)
   }
@@ -70,6 +73,7 @@ export default class Welcome extends Component {
         const socketId = this.state.socketId;
 
         if(socketId==='undefined'){
+            console.log("first condition");
             return (
             <div>   
                 <Row>
@@ -87,6 +91,7 @@ export default class Welcome extends Component {
             </div>
             )
         }else if(socketId===socket.id){
+            console.log(socket.id);
             return (
                 <div>
                     {/* <h1>username : {this.state.username}</h1> */}
@@ -99,7 +104,7 @@ export default class Welcome extends Component {
                 <div>   
                 <Row>
                     <Col md={6} className="offset-md-3">
-                        <Form onSubmit={this.onSubmit}>
+                        <Form>
                             <FormGroup>
                                 {/* <Label for="name">Your full Name</Label> */}
                                 <Input type="text" name="username" id="name" placeholder="Enter your full name" onChange={this.onChange}/>

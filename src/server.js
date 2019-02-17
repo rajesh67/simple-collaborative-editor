@@ -84,15 +84,13 @@ io.on('connection', (client) => {
     // ...emit a "message" event to every other socket
     users[data.socketId]=data.username;
     console.log("User Joined!");
-
-      client.broadcast.emit("userData", {
+      client.emit("userData", {
         channel : client.channel,
         message : data.message,
         socketId : data.socketId,
         lock : data.lock,
         users : users
       });
-
     });
 
     
