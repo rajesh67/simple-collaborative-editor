@@ -4,9 +4,6 @@
 Clone the repo on your machine:
  - git clone https://github.com/rajesh67/simple-collaborative-editor.git
  - go to the "simple-collaborative-editor" directory 
- - start your react app
-  npm start
-    2. go to localhost:3000
 
 ## Run websocket server
  - node src/server.js
