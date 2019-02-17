@@ -21,6 +21,14 @@ Using build
 - Run `serve -s build` .Will start serving the index.html output file
 
 Note:- anyhow you have to start the server by running `node src/server.js` in both cases, because this is where our websockets will be listening
+
+## Key Assumptions : Important to understand
+
+Since we don't have any save button, because we don't save data on a real server. So it is important to keep in mind the following conditions:
+ 
+ - If the mouse has entered in the textarea. Then the current user is considered to being editing something in there. Hence we lock the lock editor for all other users.
+ - Once the current user click somewhere else other then the textarea, then the editor is unlocked and other users can start typing in the ediotr. for e.g.- you have to click somewhere outside the textarea to unlock the editor.
+
 ## Available Scripts
 
 In the project directory, you can run:
