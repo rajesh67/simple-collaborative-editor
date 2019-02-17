@@ -4,11 +4,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Clone the repo on your machine:
  - git clone https://github.com/rajesh67/simple-collaborative-editor.git
- - go to the "simple-collaborative-editor" and run server by giving : node src/server.js command in terminal
+ - go to the "simple-collaborative-editor" directory 
  - start your react app
-    1 npm start
+  npm start
     2. go to localhost:3000
 
+## Run websocket server
+ - node src/server.js
+ 
+## Run frontend
+ - npm start
+ - open http://localhost:3000
 ## Available Scripts
 
 In the project directory, you can run:
