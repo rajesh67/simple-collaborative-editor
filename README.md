@@ -7,11 +7,20 @@ Clone the repo on your machine:
  - go to terminal and run `npm install`
 
 ## Run websocket server
- - node src/server.js
+Following command will start the websocket server
+ - `node src/server.js`
  
 ## Run frontend
- - npm start
- - open http://localhost:3000
+Following commands will start the frontend if using development environment
+ - `npm start`
+ - open `http://localhost:3000`
+ 
+Using build
+- Run `npm run-script build`. This will build the frontend project and output will be saved to the "build" directory
+- Run `npm i -g serve` . This will install serve
+- Run `serve -s build` .Will start serving the index.html output file
+
+Note:- anyhow you have to start the server by running `node src/server.js` in both cases, because this is where our websockets will be listening
 ## Available Scripts
 
 In the project directory, you can run:
