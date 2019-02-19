@@ -128,7 +128,12 @@ export default class Welcome extends Component {
         <p>User name is mandatory to verify, who you are?</p>
         
         {askForUsername()}
-
+        <h5>Instructions:</h5>
+                    <ul style={{listStyle:'none'}}>
+                        <li>Assumption:  - Once mouse is entered into the textarea, it is taken as the user is still editing/typing into the editor, until or unless you tell the browser that I have finished my editing in the document, hereby I allow others to edit the document.</li>
+                        <li style={{marginTop:50}}> To edit the document from another browser, "__You_Have_To_Click_Outside_THE_BLACK_BORDERED_LINE_ON_EDITOR". Only then the document is unlocked. </li>
+                        
+                    </ul>
       </Jumbotron>
       </div>
     )

@@ -114,6 +114,7 @@ class Editor extends Component {
                     <h2>
                         Here's the TextEditor.
                     </h2>
+                    <br />
                     
                     <ReactQuill value={this.state.message}
                         placeholder={this.state.message}
